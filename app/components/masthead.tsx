@@ -10,7 +10,7 @@ interface Props {
 
 const Masthead: React.FC<Props> = ({ children}) => {
   return (
-    <section className='h-full mt-2 bg-white mx-auto border-gray-50 shadow-2xl border-4 rounded-xl overflow-hidden max-w-lg'>
+    <section className='mt-2 bg-white mx-auto border-gray-50 shadow-2xl border-4 rounded-xl overflow-hidden max-w-lg'>
       <Image 
         src={mastheadImage}
         className='w-full'

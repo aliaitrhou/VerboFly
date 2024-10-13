@@ -24,8 +24,8 @@ const ChatContainer: React.FC<Props> = ({ children, gptMessages }) => {
   }, [gptMessages])
 
   return (
-    <section className="w-full h-full px-6 py-6 sm:py-8 rounded-lg border-black border-4">
-      <div ref={refContainer} className="flex flex-col bg-white  text-black overflow-auto h-[120px] sm:h-[350px] font-semibold">
+    <section className="w-full px-6 py-6 sm:py-8 rounded-lg border-black border-4">
+      <div ref={refContainer} className="flex flex-col bg-white  text-black overflow-auto h-[35dvh] sm:h-[35dvh] font-semibold">
         {
           gptMessages.map((m: any) => (
             <MessageBox key={m.id} className={` mt-3 ${m.role === 'user' ? 'self-start rounded-xl rounded-tl-none bg-green-400' : 'self-end rounded-xl roudned-tr-none rounded-tr-none bg-blue-500'}`}>

@@ -54,7 +54,7 @@ export default function Home() {
   }
 
   return (
-    <main className="max-w-fit mx-auto"> 
+    <main className="max-w-fit sm:mt-4 h-[100dvh] mx-auto"> 
       <Masthead>
         <ChatContainer gptMessages={messages}>
           <UserMessage 
